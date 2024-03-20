@@ -1,9 +1,10 @@
 class BinaryCalculator:
 
-""" 
-Calculations to be called from the main script handling program loop.
-"""
-    
+    """ SUMMARY
+    Calculations to be called from the main script handling program loop.
+    """
+
+    # Addition that shows working to the user
     def bin_add(self):
         print('\nBinary Addition\n')
         bin1 = [0] * 8
@@ -24,6 +25,7 @@ Calculations to be called from the main script handling program loop.
         print(' ', bin1, '\n+', bin2, '\n=', answer_bin)
         input('\nPress any key to continue')
 
+    # Subtraction that shows working to the user
     def bin_sub(self):
         print('\nBinary Subtraction\n')
         bin1 = [0] * 8
@@ -70,7 +72,6 @@ Calculations to be called from the main script handling program loop.
         input('\nPress any key to continue')
 
     # negate function used by other calculation functions
-    # not used by the main negation function 'bin_neg' as it does not show working to the user
     def bin_simple_neg(self, negation_bin):
         bin_value1 = [0, 0, 0, 0, 0, 0, 0, 1]
         iterator = 0
